@@ -11,6 +11,9 @@
 		671C720F26176CF100FEC6F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671C720E26176CF100FEC6F3 /* ContentView.swift */; };
 		671C721126176CF400FEC6F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 671C721026176CF400FEC6F3 /* Assets.xcassets */; };
 		671C721426176CF400FEC6F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 671C721326176CF400FEC6F3 /* Preview Assets.xcassets */; };
+		676927C72617DE3000E44A31 /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676927C62617DE3000E44A31 /* TimeCounter.swift */; };
+		676927CB2617E6F100E44A31 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676927CA2617E6F100E44A31 /* RegisterView.swift */; };
+		676927D22617E83500E44A31 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676927D12617E83500E44A31 /* UserManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		671C721026176CF400FEC6F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		671C721326176CF400FEC6F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		671C721526176CF400FEC6F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		676927C62617DE3000E44A31 /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
+		676927CA2617E6F100E44A31 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		676927D12617E83500E44A31 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,9 @@
 			children = (
 				671C720C26176CF100FEC6F3 /* MyDataFlowApp.swift */,
 				671C720E26176CF100FEC6F3 /* ContentView.swift */,
+				676927CA2617E6F100E44A31 /* RegisterView.swift */,
+				676927D12617E83500E44A31 /* UserManager.swift */,
+				676927C62617DE3000E44A31 /* TimeCounter.swift */,
 				671C721026176CF400FEC6F3 /* Assets.xcassets */,
 				671C721526176CF400FEC6F3 /* Info.plist */,
 				671C721226176CF400FEC6F3 /* Preview Content */,
@@ -139,6 +148,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				671C720F26176CF100FEC6F3 /* ContentView.swift in Sources */,
+				676927CB2617E6F100E44A31 /* RegisterView.swift in Sources */,
+				676927C72617DE3000E44A31 /* TimeCounter.swift in Sources */,
+				676927D22617E83500E44A31 /* UserManager.swift in Sources */,
 				671C720D26176CF100FEC6F3 /* MyDataFlowApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
