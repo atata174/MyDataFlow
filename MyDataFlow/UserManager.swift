@@ -6,7 +6,9 @@
 //
 
 import Combine
+import SwiftUI
 
-class UserManager {
-    
+class UserManager: ObservableObject {
+    @Published var isRegister = false
+    @AppStorage("name") var name = ""
 }

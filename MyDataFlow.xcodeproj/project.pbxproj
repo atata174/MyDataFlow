@@ -14,6 +14,7 @@
 		676927C72617DE3000E44A31 /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676927C62617DE3000E44A31 /* TimeCounter.swift */; };
 		676927CB2617E6F100E44A31 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676927CA2617E6F100E44A31 /* RegisterView.swift */; };
 		676927D22617E83500E44A31 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676927D12617E83500E44A31 /* UserManager.swift */; };
+		676927D52617EB5C00E44A31 /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676927D42617EB5C00E44A31 /* StarterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		676927C62617DE3000E44A31 /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
 		676927CA2617E6F100E44A31 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		676927D12617E83500E44A31 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		676927D42617EB5C00E44A31 /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				671C720C26176CF100FEC6F3 /* MyDataFlowApp.swift */,
 				671C720E26176CF100FEC6F3 /* ContentView.swift */,
 				676927CA2617E6F100E44A31 /* RegisterView.swift */,
+				676927D42617EB5C00E44A31 /* StarterView.swift */,
 				676927D12617E83500E44A31 /* UserManager.swift */,
 				676927C62617DE3000E44A31 /* TimeCounter.swift */,
 				671C721026176CF400FEC6F3 /* Assets.xcassets */,
@@ -149,6 +152,7 @@
 			files = (
 				671C720F26176CF100FEC6F3 /* ContentView.swift in Sources */,
 				676927CB2617E6F100E44A31 /* RegisterView.swift in Sources */,
+				676927D52617EB5C00E44A31 /* StarterView.swift in Sources */,
 				676927C72617DE3000E44A31 /* TimeCounter.swift in Sources */,
 				676927D22617E83500E44A31 /* UserManager.swift in Sources */,
 				671C720D26176CF100FEC6F3 /* MyDataFlowApp.swift in Sources */,
