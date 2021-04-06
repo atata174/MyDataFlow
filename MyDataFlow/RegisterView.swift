@@ -10,30 +10,22 @@ import SwiftUI
 struct RegisterView: View {
     
     @EnvironmentObject var user: UserManager
-    @AppStorage("name") var name = ""
-    var isCorrectName = false
     
     var body: some View {
         VStack {
-            RegisterTextField(name: $name)
+            RegisterTextField(name: $user.user.name)
             Button(action: registerUser) {
                 Image(systemName: "checkmark.circle")
                 Text("OK")
-            }.disabled(name.count < 3 ? true : false)
+            }.disabled(!user.isNameValid)
         }
     }
     
     private func registerUser() {
-        if !name.isEmpty {
-            user.name = name
-            user.isRegister.toggle()
+        if !user.user.name.isEmpty {
+            DataManager.shared.saveUser(user: user.user)
+            user.user.isRegister.toggle()
         }
-    }
-}
-
-struct RegisterView_Previews: PreviewProvider {
-    static var previews: some View {
-        RegisterView()
     }
 }
 
@@ -49,5 +41,12 @@ struct RegisterTextField: View {
                 .foregroundColor(name.count < 3 ? .red : .green)
                 .offset(x: -20, y: 0)
         }
+    }
+}
+
+struct Register_Previews: PreviewProvider {
+    static var previews: some View {
+        RegisterView()
+            .environmentObject(UserManager())
     }
 }

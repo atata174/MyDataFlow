@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var timer = TimeCounter()
-    @AppStorage("name") var name = ""
+    @EnvironmentObject var user: UserManager
     
     var body: some View {
         VStack {
-            Text("Hi, \(name)!")
+            Text("Hi, \(user.user.name)!")
                 .font(.title)
                 .padding()
             Text("\(timer.counter)")
@@ -22,17 +22,11 @@ struct ContentView: View {
             Spacer()
             ButtonView().environmentObject(timer)
             Spacer()
-            LogOutButton(name: $name)
+            LogOutButton(user: user)
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-            .environmentObject(UserManager())
-    }
-}
 
 struct ButtonView: View {
     @EnvironmentObject var timer: TimeCounter
@@ -54,8 +48,7 @@ struct ButtonView: View {
 }
 
 struct LogOutButton: View {
-    @EnvironmentObject var user: UserManager
-    @Binding var name: String
+    var user: UserManager
     
     var body: some View {
         Button(action: logOutAction) {
@@ -74,7 +67,7 @@ struct LogOutButton: View {
     }
     
     private func logOutAction() {
-        user.name = ""
-        user.isRegister.toggle()
+        user.user.name = ""
+        user.user.isRegister.toggle()
     }
 }
